@@ -21,6 +21,7 @@ namespace Geotema
     /// </summary>
     public partial class MainWindow : Window
     {
+        //her laver jeg nogle properties og tildeler dem nogle værdier fra en constructor fordi de bliver brugt i mange af metode-rne og class-erne
         static public SqlConnection cnn { get; set; }
         static public SqlCommand command { get; set; }
         static public SqlDataAdapter adapter { get; set; }
@@ -31,7 +32,7 @@ namespace Geotema
             cnn.Open();
             InitializeComponent();
         }
-
+        //denne metode tag dataen fra tekt kasserne finder deres privilege level og sender dem til det window de skal bruge
         private void PWselect(object sender, RoutedEventArgs e)
         {
             SqlDataReader datareader;
@@ -78,6 +79,7 @@ namespace Geotema
         {
             
         }
+        //her er min constructor som tildeler min properties værdierne som bliver brugt oftest
         static MainWindow()
         {
             string connetionString = @"Data Source=192.168.4.122;Initial Catalog=GeoTema;User ID=sa;Password=Passw0rd;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";

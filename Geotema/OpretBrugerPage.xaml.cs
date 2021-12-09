@@ -21,7 +21,7 @@ namespace Geotema
         {
             InitializeComponent();
         }
-        //dette er min opret bruger knap metode som sender værdierne fra min værdi kasser til min sql database og dermed opretter en ny bruger i databassen
+        //dette er min opret bruger knap metode som sender værdierne fra min værdi kasser til min sql database og dermed opretter en ny bruger i databasen
         private void OpretBrugerButton(object sender, RoutedEventArgs e)
         {
             MainWindow.sql = $"insert into Bruger values('{Brugernavn.Text}','{Password.Password}',{Privilege.Text});";

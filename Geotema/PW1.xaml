@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Geotema"
         mc:Ignorable="d"
         Title="PW1" Height="450" Width="800">
+    <!--her i mit grid laver jeg nogle grid og rows som jeg tildeler en frame-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -13,6 +14,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <DataGrid Grid.Row="0" Grid.Column="0" Name="GeotemaData" IsReadOnly="True"/>
+        <Frame x:Name="indhold" Grid.Column="0" Grid.Row="0" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

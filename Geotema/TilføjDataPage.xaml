@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="TilføjDataPage">
-
+    <!--her i mit grid laver jeg nogle grids og rows som jeg tildeler nogle knapper og textboxs-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>

@@ -12,9 +12,7 @@ using System.Windows.Shapes;
 
 namespace Geotema
 {
-    /// <summary>
-    /// Interaction logic for PW3.xaml
-    /// </summary>
+    //dette er Privilege Window 3 den er til de administratorer som benytter programet den kalder på vise data page, tilføj data page, nulstil data page og opret bruger page
     public partial class PW3 : Window
     {
         public PW3()

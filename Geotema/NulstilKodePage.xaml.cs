@@ -14,14 +14,14 @@ using System.Data.SqlClient;
 
 namespace Geotema
 {
-    //dette er min nulstil kode page some nulstiller en brugers kode
+    //dette er min nulstil kode page som nulstiller en brugers kode
     public partial class NulstilKodePage : Page
     {
         public NulstilKodePage()
         {
             InitializeComponent();
         }
-        //denne nulstil kode knap(metode) ta
+        //denne nulstil kode knap(metode) tag det brugernavn du indtaster og nulstiller deres password
         private void NulstilKodeButton(object sender, RoutedEventArgs e)
         {
             MainWindow.sql = $"update Bruger set Passw0rd = null where Brugernavn = '{Brugernavn.Text}'";

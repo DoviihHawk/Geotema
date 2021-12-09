@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Geotema"
         mc:Ignorable="d"
         Title="PW3" Height="450" Width="800">
+    <!--her i mit grid laver jeg nogle grids og rows som jeg tildeler nogle knapper og en Frame-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

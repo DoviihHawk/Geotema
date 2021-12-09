@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ViseDataPage">
-
+    <!--her i mit grid laver jeg nogle grids og rows som jeg tildeler et datagrid-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

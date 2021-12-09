@@ -12,9 +12,7 @@ using System.Windows.Shapes;
 
 namespace Geotema
 {
-    /// <summary>
-    /// Interaction logic for PW2.xaml
-    /// </summary>
+    //dette er Privilege Window 2 den er til de super bruger som benytter programet den kalder på vise data page og tilføj data page
     public partial class PW2 : Window
     {
         public PW2()

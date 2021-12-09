@@ -15,11 +15,10 @@ using System.Data;
 
 namespace Geotema
 {
-    /// <summary>
-    /// Interaction logic for ViseDataPage.xaml
-    /// </summary>
+    //dette er mit vise data page som viser dataen fra databasen
     public partial class ViseDataPage : Page
     {
+        //denne vise data metode bruger en full outer join sql command til at vise dataen fra databasen i et datagrid
         public ViseDataPage()
         {
             InitializeComponent();

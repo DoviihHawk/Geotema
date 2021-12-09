@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="NulstilKodePage">
-
+    <!--her i mit grid laver jeg nogle grids og rows som jeg tildeler en knap og en textbox-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>

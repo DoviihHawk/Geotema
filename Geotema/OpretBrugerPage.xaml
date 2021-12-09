@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="OpretBrugerPage">
-
+    <!--her i mit grid laver jeg nogle grids og rows som jeg tildeler en knap og nogle textboxs-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>

@@ -14,16 +14,14 @@ using System.Data.SqlClient;
 
 namespace Geotema
 {
-    /// <summary>
-    /// Interaction logic for TilføjDataPage.xaml
-    /// </summary>
+    //dette er min tilføj data page som tilføjer data til sql databasen
     public partial class TilføjDataPage : Page
     {
         public TilføjDataPage()
         {
             InitializeComponent();
         }
-
+        //dette er min tilføj data knap(metode) som tag data fra tekt kasserne og tilføjer dem til databasen
         private void TilføjDataButton(object sender, RoutedEventArgs e)
         {
             MainWindow.sql = $"insert into Land (ID,Land,Verdensdel) values({ID.Text},'{Land.Text}','{Verdensdel.Text}');" +
