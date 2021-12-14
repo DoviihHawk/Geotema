@@ -17,7 +17,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Button Grid.Column="0" Grid.Row="0" Content="Tilføj data" FontSize="20" Click="TilføjDataPageButton"/>
-        <Button Grid.Column="1" Grid.Row="0" Content="Vise data" Name="ViseData"  FontSize="20" Click="ViseDataPageButton"/>
+        <Button Grid.Column="1" Grid.Row="0" Content="Vis data" Name="ViseData"  FontSize="20" Click="ViseDataPageButton"/>
         <Frame x:Name="indhold" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

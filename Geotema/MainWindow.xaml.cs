@@ -29,12 +29,13 @@ namespace Geotema
 
         public MainWindow()
         {
-            cnn.Open();
             InitializeComponent();
         }
         //denne metode tag dataen fra tekt kasserne finder deres privilege level og sender dem til det window de skal bruge
         private void PWselect(object sender, RoutedEventArgs e)
         {
+            cnn.Open();
+
             SqlDataReader datareader;
 
             sql = $"select Privilege from Bruger where Brugernavn='{Brugernavn.Text}' and Passw0rd='{Password.Password}'";
@@ -43,7 +44,7 @@ namespace Geotema
 
             datareader = command.ExecuteReader();
 
-            string PL = "";
+            string PL = null;
 
             while (datareader.Read())
             {
@@ -67,7 +68,10 @@ namespace Geotema
                     privilegeWindow3.Show();
                     break;
             }
-            this.Close();
+            if (PL != null)
+            {
+                this.Close();
+            }
         }
 
         private void Brugernavn_TextChanged(object sender, TextChangedEventArgs e)

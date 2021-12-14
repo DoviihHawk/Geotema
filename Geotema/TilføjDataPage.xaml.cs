@@ -24,16 +24,21 @@ namespace Geotema
         //dette er min tilføj data knap(metode) som tag data fra tekt kasserne og tilføjer dem til databasen
         private void TilføjDataButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.sql = $"insert into Land (ID,Land,Verdensdel) values({ID.Text},'{Land.Text}','{Verdensdel.Text}');" +
-                $"insert into Rang (ID,Rang,Fødselsrate) values({ID.Text},'{Rang.Text}','{Fødselsrate.Text}');";
-
             MainWindow.cnn.Open();
+            try
+            {
+                MainWindow.sql = $"insert into Land (ID,Land,Verdensdel) values({ID.Text},'{Land.Text}','{Verdensdel.Text}');" +
+                    $"insert into Rang (ID,Rang,Fødselsrate) values({ID.Text},'{Rang.Text}','{Fødselsrate.Text}');";
 
-            MainWindow.command = new SqlCommand(MainWindow.sql, MainWindow.cnn);
+                MainWindow.command = new SqlCommand(MainWindow.sql, MainWindow.cnn);
 
-            MainWindow.adapter.InsertCommand = MainWindow.command;
-            MainWindow.adapter.InsertCommand.ExecuteNonQuery();
-
+                MainWindow.adapter.InsertCommand = MainWindow.command;
+                MainWindow.adapter.InsertCommand.ExecuteNonQuery();
+            }
+            catch
+            {
+                MessageBox.Show("ID, Rang og Fødselsrate skal være et tal");
+            }
             MainWindow.command.Dispose();
             MainWindow.cnn.Close();
         }

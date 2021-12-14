@@ -21,7 +21,7 @@
         <Button Grid.Column="0" Grid.Row="0" Content="Opret bruger" FontSize="20" Click="OpretBrugerPageButton"/>
         <Button Grid.Column="1" Grid.Row="0" Content="Nulstil Kode" FontSize="20" Click="NulstilKodePageButton"/>
         <Button Grid.Column="2" Grid.Row="0" Content="Tilføj data" FontSize="20" Click="TilføjDataPageButton"/>
-        <Button Grid.Column="3" Grid.Row="0" Content="Vise data" Name="ViseData"  FontSize="20" Click="ViseDataPageButton"/>
+        <Button Grid.Column="3" Grid.Row="0" Content="Vis data" Name="ViseData"  FontSize="20" Click="ViseDataPageButton"/>
         <Frame x:Name="indhold" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
